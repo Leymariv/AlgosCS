@@ -1,0 +1,5 @@
+C:\Dev\ValmonLeymarie\Algos\obj\Debug\Algos.csprojResolveAssemblyReference.cache
+C:\Dev\ValmonLeymarie\Algos\bin\Debug\Algos.dll
+C:\Dev\ValmonLeymarie\Algos\bin\Debug\Algos.pdb
+C:\Dev\ValmonLeymarie\Algos\obj\Debug\Algos.dll
+C:\Dev\ValmonLeymarie\Algos\obj\Debug\Algos.pdb
