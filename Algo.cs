@@ -14,7 +14,8 @@ namespace Algos
                 InsertValue(root, value);
             }
         }
-
+        
+        //@deepalgo
         public static NodeTree InsertValue(NodeTree root, int value)
         {
             if (root == null)
@@ -31,7 +32,8 @@ namespace Algos
             }
             return root;
         }
-
+        
+        //@deepalgo
         public static bool TreeContainsRec(NodeTree root, int value)
         {
             if (root == null)
@@ -44,7 +46,8 @@ namespace Algos
             }
             return TreeContainsRec(value > root.Value ? root.Right : root.Left, value);
         }
-
+        
+        //@deepalgo
         public static bool TreeContainsIt(NodeTree root, int value)
         {
             var current = root;
@@ -58,7 +61,8 @@ namespace Algos
             }
             return false;
         }
-
+        
+        //@deepalgo
         public static bool IsBalancedRec(NodeTree root)
         {
             if (root != null)
@@ -75,6 +79,7 @@ namespace Algos
             return true;
         }
 
+        //@deepalgo
         public static int MyWeight(NodeTree root)
         {
             if (root == null)
@@ -84,6 +89,7 @@ namespace Algos
             return 1 + Math.Max(MyWeight(root.Left), MyWeight(root.Right));
         }
 
+        //@deepalgo
         public static NodeList GetMid(NodeList head)
         {
             var current = head;
@@ -111,7 +117,8 @@ namespace Algos
          *  1 
          *  
          */
-
+        
+        //@deepalgo
         public static NodeTree BuildBalancedTree(IEnumerable<int> list)
         {
             if (list == null || !list.Any())
@@ -129,7 +136,8 @@ namespace Algos
             newRoot.Right = BuildBalancedTree(subListRight);
             return newRoot;
         }
-
+        
+        //@deepalgo
         public static IEnumerable<int> RootToList(NodeTree root)
         {
             if (root != null)
@@ -158,7 +166,7 @@ namespace Algos
         }
 
         /* Breadth First Search */
-
+        //@deepalgo
         public static IEnumerable<int> RootToHorizontalList(NodeTree root)
         {
             if (root == null)
@@ -254,13 +262,15 @@ namespace Algos
             tab[indexFrom] = tab[indexTo];
             tab[indexTo] = temp;
         }
-
+        
+        //@deepalgo
         public static int SumRec(int index)
         {
             int one = 1;
             return index == 0 ? 0 : index + SumRec(index - one);
         }
-
+        
+        //@deepalgo
         public static int FibonacciIt(int number)
         {
             var result = 1;
@@ -275,6 +285,7 @@ namespace Algos
             return result;
         }
 
+        //@deepalgo
         public static int FibonacciRec(int number)
         {
             int one = 1, two = 2;
